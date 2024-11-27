@@ -2,6 +2,7 @@ import { ThemeProvider } from '@/context/ThemeContext';
 import Header from '@/components/Header';
 import Pattern from '@/components/Pattern';
 import '../styles/globals.css';
+import { Analytics } from "@vercel/analytics/react"
 
 export const metadata = {
   title: "Sullivan's Portfolio",
