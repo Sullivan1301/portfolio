@@ -14,8 +14,40 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: rgb(var(--background-rgb));
+  background: linear-gradient(135deg, #000B58, #006A67);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
   transition: background-color 0.3s, color 0.3s;
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Add patterns */
+.pattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.pattern-circle {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.1;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.pattern-square {
+  position: absolute;
+  opacity: 0.1;
+  background: rgba(255, 255, 255, 0.5);
 }
 
 /* Add dark mode utility classes */
@@ -31,4 +63,31 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+/* Light mode styles */
+body {
+  background: linear-gradient(135deg, #000B58, #006A67);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  color: #2A3335;
+}
+
+.header {
+  background-color: #ffffff;
+}
+
+/* Add light mode styles for other components */
+.bg-primaryBg-light {
+  background-color: #ffffff;
+}
+
+.text-theme {
+  color: #2A3335;
+}
+
+.text-interactive {
+  color: #FFB74D;
+}
+
+/* Add more styles as needed */
 

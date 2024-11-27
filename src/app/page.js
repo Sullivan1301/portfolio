@@ -7,9 +7,8 @@ import SkillsSection from '../components/SkillsSection';
 import ProjectsSection from '../components/ProjectsSection';
 import CollaborationSection from '../components/CollaborationSection';
 import ContactSection from '../components/ContactSection';
-import DataScienceSection from '@/components/DataScienceSection';
 import BlogSection from '@/components/BlogSection';
-import SoftSkillsSection from '@/components/SoftSkillsSection';
+import InterpersonalSkillsSection from '@/components/InterpersonalSkillsSection';
 import InterestsSection from '@/components/InterestsSection';
 
 export default function Home() {
@@ -19,9 +18,8 @@ export default function Home() {
       <AboutSection />
       <ExperienceSection />
       <SkillsSection />
-      <SoftSkillsSection />
+      <InterpersonalSkillsSection />
       <InterestsSection />
-      <DataScienceSection />
       <ProjectsSection />
       <BlogSection />
       <CollaborationSection />

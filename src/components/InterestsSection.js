@@ -7,7 +7,7 @@ const interests = [
   {
     title: 'Gaming Enthusiast',
     icon: 'gaming',
-    description: "When I'm not coding, I love playing PUBG Mobile, where I enjoy the challenge and the competitive aspect of the game.",
+    description: "When I'm not coding, I love playing Video Games, where I enjoy the challenge and the competitive aspect of the games.",
     details: {
       game: 'PUBG Mobile',
       achievement: 'Competitive Player',
@@ -17,7 +17,7 @@ const interests = [
   {
     title: 'Sports Lover',
     icon: 'sports',
-    description: "I also play volleyball and basketball in my free time, which keeps me active and helps me develop team-oriented skills.",
+    description: "I also play volleyball and basketball sometimes, which keeps me active and helps me develop team-oriented skills.",
     details: {
       sports: ['Volleyball', 'Basketball'],
       type: 'Recreational'
@@ -115,46 +115,6 @@ export default function InterestsSection() {
             </motion.div>
           ))}
         </div>
-
-        {/* Additional Interactive Element */}
-        <motion.div
-          className="mt-16 text-center"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.4 }}
-        >
-          <p className="text-theme/80 mb-4">
-            Want to connect over shared interests?
-          </p>
-          <motion.div
-            className="flex items-center justify-center gap-4"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            {/* PUBG Mobile */}
-            <a
-              href="https://www.pubgmobile.com/en-US/home.shtml"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-4 py-2 bg-interactive text-white rounded-lg font-medium flex items-center gap-2 hover:bg-accent transition-colors"
-            >
-              <Icon section="interests" name="gaming" size={20} />
-              PUBG Profile
-            </a>
-
-            {/* LinkedIn for professional connections */}
-            <a
-              href="https://www.linkedin.com/in/Sullivan%20Rakotoniaina"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-4 py-2 bg-interactive text-white rounded-lg font-medium flex items-center gap-2 hover:bg-accent transition-colors"
-            >
-              <Icon section="contact" name="linkedin" size={20} />
-              Connect
-            </a>
-          </motion.div>
-        </motion.div>
       </div>
     </section>
   );

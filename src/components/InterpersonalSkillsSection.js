@@ -21,9 +21,9 @@ const softSkills = [
   }
 ];
 
-export default function SoftSkillsSection() {
+export default function InterpersonalSkillsSection() {
   return (
-    <section id="soft-skills" className="py-20 bg-theme">
+    <section id="interpersonal-skills" className="py-20 bg-theme">
       <div className="max-w-6xl mx-auto px-4">
         <motion.div
           className="text-center mb-16"
@@ -35,7 +35,7 @@ export default function SoftSkillsSection() {
           <h2 className="text-3xl md:text-4xl font-bold text-theme">
             <span className="flex items-center justify-center gap-4">
               <Icon section="skills" name="soft" size={32} className="text-interactive" />
-              Soft Skills
+              Interpersonal Skills
             </span>
           </h2>
           <p className="mt-4 text-theme/80 max-w-2xl mx-auto">
