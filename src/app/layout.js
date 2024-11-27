@@ -1,7 +1,6 @@
 import { ThemeProvider } from '@/context/ThemeContext';
 import Header from '@/components/Header';
-import ThemeToggle from '@/components/common/ThemeToggle';
-import FloatingCTA from '@/components/common/FloatingCTA';
+import Pattern from '@/components/Pattern';
 import '../styles/globals.css';
 
 export const metadata = {
@@ -14,11 +13,10 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <ThemeProvider>
-          <div className="transition-colors duration-300">
+          <div className="transition-colors duration-300 relative">
+            <Pattern />
             <Header />
-            <ThemeToggle />
             {children}
-            <FloatingCTA />
           </div>
         </ThemeProvider>
       </body>

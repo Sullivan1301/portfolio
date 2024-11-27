@@ -85,7 +85,7 @@ export default function ContactSection() {
               <Icon section="contact" name="email" size={32} className="text-interactive" />
               <div>
                 <h3 className="text-xl font-semibold text-theme">Email</h3>
-                <p className="text-theme">your.email@example.com</p>
+                <p className="text-theme">jorosullivan13@gmail.com</p>
               </div>
             </div>
             <div className="flex items-center gap-4">
@@ -97,7 +97,7 @@ export default function ContactSection() {
             </div>
             <div className="flex items-center gap-4">
               <Icon section="contact" name="linkedin" size={32} className="text-interactive" />
-              <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" className="text-interactive hover:text-accent">
+              <a href="https://www.linkedin.com/in/Sullivan%20Rakotoniaina" target="_blank" rel="noopener noreferrer" className="text-interactive hover:text-accent">
                 LinkedIn Profile
               </a>
             </div>

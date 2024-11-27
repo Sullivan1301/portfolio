@@ -1,29 +1,31 @@
 'use client';
 
-import { createContext, useContext, useEffect, useState } from 'react';
+import React, { createContext, useContext, useState, useEffect } from 'react';
 
 const ThemeContext = createContext();
 
-export function ThemeProvider({ children }) {
+export const ThemeProvider = ({ children }) => {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   useEffect(() => {
     const savedTheme = localStorage.getItem('theme');
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    
-    setIsDarkMode(savedTheme === 'dark' || (!savedTheme && prefersDark));
+    if (savedTheme) {
+      setIsDarkMode(savedTheme === 'dark');
+    }
   }, []);
 
   const toggleTheme = () => {
-    setIsDarkMode(!isDarkMode);
+    setIsDarkMode((prev) => !prev);
     localStorage.setItem('theme', !isDarkMode ? 'dark' : 'light');
   };
 
   return (
     <ThemeContext.Provider value={{ isDarkMode, toggleTheme }}>
-      {children}
+      <div className={isDarkMode ? 'dark' : ''}>
+        {children}
+      </div>
     </ThemeContext.Provider>
   );
-}
+};
 
 export const useTheme = () => useContext(ThemeContext); 

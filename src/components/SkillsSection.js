@@ -5,7 +5,7 @@ import Icon from './common/Icon';
 
 const skills = [
   {
-    name: 'Technical Skills',
+    name: 'Technical', 
     icon: 'technical',
     items: [
       { name: 'JavaScript/TypeScript', level: 85 },
@@ -17,7 +17,7 @@ const skills = [
     ]
   },
   {
-    name: 'Soft Skills',
+    name: 'Soft',
     icon: 'soft',
     items: [
       { name: 'Communication', level: 90 },
