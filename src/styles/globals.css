@@ -18,6 +18,7 @@ body {
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
   transition: background-color 0.3s, color 0.3s;
+  overflow-x: hidden; /* Prevent horizontal overflow */
 }
 
 @keyframes gradient {
@@ -90,4 +91,30 @@ body {
 }
 
 /* Add more styles as needed */
+
+.scatter-plot-container {
+  margin: 20px auto;
+  max-width: 600px;
+  padding: 20px;
+  background-color: #ffffff; /* Light background for the plot */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.landing-section {
+  background-image: url('/images/fond_de_plage_bras_ouvert_cote_dos.jpg');
+  background-size: cover; /* Ensure the entire image is visible */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  min-height: 100vh; /* Ensure it takes up the full height of the viewport */
+  display: flex; /* Center content */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  color: #ffffff; /* Text color for better visibility */
+}
+
+img {
+  max-width: 100%; /* Ensure images do not exceed their container */
+  height: auto; /* Maintain aspect ratio */
+}
 
