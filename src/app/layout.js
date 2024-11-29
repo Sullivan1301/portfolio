@@ -1,6 +1,7 @@
 import { ThemeProvider } from '@/context/ThemeContext';
 import Header from '@/components/Header';
 import Pattern from '@/components/Pattern';
+import Footer from '@/components/Footer';
 import '../styles/globals.css';
 
 export const metadata = {
@@ -17,6 +18,7 @@ export default function RootLayout({ children }) {
             <Pattern />
             <Header />
             {children}
+            <Footer />
           </div>
         </ThemeProvider>
       </body>
