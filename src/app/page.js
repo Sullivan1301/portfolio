@@ -4,7 +4,7 @@ import LandingSection from '../components/LandingSection';
 import AboutSection from '../components/AboutSection';
 import ExperienceSection from '../components/ExperienceSection';
 import SkillsSection from '../components/SkillsSection';
-import ProjectsSection from '../components/ProjectsSection';
+// import ProjectsSection from '../components/ProjectsSection';
 import CollaborationSection from '../components/CollaborationSection';
 import ContactSection from '../components/ContactSection';
 import BlogSection from '@/components/BlogSection';
@@ -20,7 +20,6 @@ export default function Home() {
       <SkillsSection />
       <InterestsSection />
       <InterpersonalSkillsSection />
-      <ProjectsSection />
       <BlogSection />
       <CollaborationSection />
       <ContactSection />
