@@ -1,10 +1,9 @@
 'use client';
 
 import { motion, useAnimation } from 'framer-motion';
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import Icon from './common/Icon';
 
-// Real skills and technologies you work with
 const skillTags = [
   'React', 'Node.js', 'Python', 'Django', 'Java', 'SpringBoot',
   'JavaScript', 'TypeScript','Jira', 'PostgreSQL', 'Google Workspace',

@@ -85,7 +85,7 @@ export default function BlogSection() {
           transition={{ delay: 0.4 }}
         >
           <Link 
-            href="/blog"
+            href="#"
             className="inline-flex items-center gap-2 text-interactive hover:text-accent transition-colors"
           >
             <span>View all blog posts</span>
