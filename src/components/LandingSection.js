@@ -12,7 +12,6 @@ export default function LandingSection() {
     { name: 'Experience', icon: 'experience', href: '#experience' },
     { name: 'Skills', icon: 'technical', href: '#skills' },
     { name: 'Soft Skills', icon: 'soft', href: '#soft-skills' },
-    { name: 'Data Science', icon: 'technical', href: '#data-science' },
     { name: 'Projects', icon: 'projects', href: '#projects' },
     { name: 'Interests', icon: 'interests', href: '#interests' },
     { name: 'Blog', icon: 'about', href: '#blog' },
@@ -23,7 +22,7 @@ export default function LandingSection() {
   return (
     <section className="landing-section">
       <div className="text-center">
-        <h1 className="text-4xl md:text-6xl font-bold">Sullivan Rakotoniaina</h1>
+        <h1 className="text-4xl md:text-6xl font-bold">Joro Sullivan Rakotoniaina</h1>
         <p className="text-xl md:text-2xl mt-4">Software Engineer & Data Science Enthusiast</p>
         <a href="#about" className="mt-8 inline-block px-6 py-3 bg-accent text-white rounded-lg">
           Who Am I?

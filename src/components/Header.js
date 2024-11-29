@@ -7,9 +7,8 @@ const navigationItems = [
   { name: 'About Me', href: '#about' },
   { name: 'Experience', href: '#experience' },
   { name: 'Skills', href: '#skills' },
-  { name: 'Data Science', href: '#data-science' },
-  { name: 'Projects', href: '#projects' },
   { name: 'Interests', href: '#interests' },
+  { name: 'Projects', href: '#projects' },
   { name: 'Blog', href: '#blog' },
   { name: 'Collaborate', href: '#collaborate' },
   { name: 'Contact', href: '#contact' }
@@ -20,7 +19,7 @@ export default function Header() {
     <header className="fixed top-0 left-0 right-0 bg-white shadow-lg z-50">
       <div className="max-w-6xl mx-auto px-4 py-4">
         <nav className="flex justify-between items-center">
-          <h1 className="text-2xl font-bold text-black">My Portfolio</h1>
+          <h1 className="text-2xl font-semibold text-black">Joro Sullivan</h1>
           <ul className="flex space-x-6">
             {navigationItems.map((item) => (
               <li key={item.name}>
