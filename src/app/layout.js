@@ -1,12 +1,16 @@
 import { ThemeProvider } from '@/context/ThemeContext';
 import Header from '@/components/Header';
 import Pattern from '@/components/Pattern';
+import Footer from '@/components/Footer';
 import '../styles/globals.css';
 import { Analytics } from "@vercel/analytics/react"
 
 export const metadata = {
   title: "Sullivan's Portfolio",
   description: "Sullivan's Portfolio - Tech and Innovation",
+  icons:{
+    icon: '/images/photo_cv.jpg',
+  }
 };
 
 export default function RootLayout({ children }) {
@@ -18,6 +22,7 @@ export default function RootLayout({ children }) {
             <Pattern />
             <Header />
             {children}
+            <Footer />
           </div>
         </ThemeProvider>
       </body>

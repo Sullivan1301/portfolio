@@ -6,13 +6,12 @@ import Icon from './common/Icon';
 
 // Real skills and technologies you work with
 const skillTags = [
-  'React', 'Node.js', 'Python', 'Data Science',
-  'JavaScript', 'TypeScript', 'MongoDB', 'PostgreSQL',
-  'Next.js', 'TailwindCSS', 'Git', 'REST API'
+  'React', 'Node.js', 'Python', 'Django', 'Java', 'SpringBoot',
+  'JavaScript', 'TypeScript','Jira', 'PostgreSQL', 'Google Workspace',
+  'Next.js', 'TailwindCSS', 'Git', 'REST API', 'Linux'
 ];
 
 export default function CollaborationSection() {
-  const [hoveredMonth, setHoveredMonth] = useState(null);
   const cloudControls = useAnimation();
 
   // Animate the skill cloud
@@ -113,36 +112,7 @@ export default function CollaborationSection() {
           </div>
         </motion.div>
 
-        {/* Availability Calendar */}
-        <motion.div
-          className="mb-12 p-8 bg-primaryBg-light dark:bg-primaryBg-dark rounded-lg shadow-lg"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-        >
-          <h3 className="text-2xl font-semibold text-theme mb-4 text-center">
-            Current Availability
-          </h3>
-          <div className="grid grid-cols-4 gap-4">
-            {['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'].map((month) => (
-              <motion.div
-                key={month}
-                className="p-2 bg-interactive text-white rounded-lg text-center cursor-pointer"
-                whileHover={{ scale: 1.1 }}
-                onHoverStart={() => setHoveredMonth(month)}
-                onHoverEnd={() => setHoveredMonth(null)}
-              >
-                {month}
-              </motion.div>
-            ))}
-          </div>
-          {hoveredMonth && (
-            <p className="mt-4 text-center text-theme/80">
-              {hoveredMonth}: Open to discussing new opportunities
-            </p>
-          )}
-        </motion.div>
+        
 
         {/* Contact Links */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
@@ -204,15 +174,6 @@ export default function CollaborationSection() {
             Whether you have a specific project in mind or want to explore possibilities,
             I'm excited to hear from you. Let's turn ideas into reality!
           </p>
-          <motion.a
-            href="mailto:jorosullivan13@gmail.com"
-            className="inline-flex items-center gap-2 bg-accent text-white px-8 py-3 rounded-lg font-semibold hover:bg-accent/90 transition-colors"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            <Icon section="contact" name="email" size={24} />
-            Start a Conversation
-          </motion.a>
         </motion.div>
       </div>
     </section>

@@ -19,6 +19,9 @@ body {
   animation: gradient 15s ease infinite;
   transition: background-color 0.3s, color 0.3s;
   overflow-x: hidden; /* Prevent horizontal overflow */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the body takes at least the full height of the viewport */
 }
 
 @keyframes gradient {
@@ -116,5 +119,20 @@ body {
 img {
   max-width: 100%; /* Ensure images do not exceed their container */
   height: auto; /* Maintain aspect ratio */
+}
+
+footer {
+  margin: 0; /* Remove any default margin */
+  padding: 0; /* Remove any default padding */
+}
+
+html, body {
+  height: 100%; /* Ensure the body takes the full height */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+main {
+  flex: 1; /* Allow the main content to grow and fill the available space */
 }
 
