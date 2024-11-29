@@ -46,7 +46,7 @@ export default function Header() {
               <ul className="py-2">
                 <li>
                   <a
-                    href="/path/to/your_cv.pdf" // Replace with the actual path to your CV
+                    href="/public/docs/CV_Joro Sullivan_RAKOTONIAINA.pdf" // Replace with the actual path to your CV
                     download
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                   >
