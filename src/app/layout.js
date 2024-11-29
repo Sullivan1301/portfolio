@@ -7,6 +7,9 @@ import '../styles/globals.css';
 export const metadata = {
   title: "Sullivan's Portfolio",
   description: "Sullivan's Portfolio - Tech and Innovation",
+  icons:{
+    icon: '/images/photo_cv.jpg',
+  }
 };
 
 export default function RootLayout({ children }) {
