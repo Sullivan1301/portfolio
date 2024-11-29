@@ -8,22 +8,24 @@ const skills = [
     name: 'Technical', 
     icon: 'technical',
     items: [
-      { name: 'JavaScript/TypeScript', level: 85 },
-      { name: 'React', level: 80 },
-      { name: 'Python', level: 75 },
-      { name: 'Django', level: 70 },
-      { name: 'HTML/CSS', level: 90 },
-      { name: 'Node.js', level: 65 }
+      { name: 'JavaScript/TypeScript', level: 70 },
+      { name: 'React/Next', level: 60 },
+      { name: 'Python/Django', level: 40 },
+      { name: 'Java', level: 60 },
+      { name: 'HTML/CSS', level: 70 },
+      { name: 'Node.js', level: 60 }
     ]
   },
   {
     name: 'Soft',
     icon: 'soft',
     items: [
+      { name: 'Jira Software/Google Workspace', level: 70 },
       { name: 'Communication', level: 90 },
-      { name: 'Problem Solving', level: 85 },
-      { name: 'Team Work', level: 90 },
-      { name: 'Adaptability', level: 85 }
+      { name: 'Problem Solving', level: 75 },
+      { name: 'Team Work', level: 80 },
+      { name: 'Adaptability', level: 85 },
+      { name: 'LeaderShip', level: 70 },
     ]
   }
 ];
