@@ -3,6 +3,7 @@
 import { AnimatePresence, motion } from 'framer-motion';
 import Image from 'next/image';
 import { FaDownload, FaLinkedinIn, FaWhatsapp } from 'react-icons/fa';
+import { useState } from 'react';
 
 const navigationItems = [
   { name: 'About Me', href: '#about' },
