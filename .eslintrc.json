@@ -1,3 +1,9 @@
 {
-  "extends": "next"
+  "extends": ["next", "plugin:prettier/recommended"],
+  "rules": {
+    "react/no-unescaped-entities": "off", // Désactive les avertissements pour les caractères non échappés
+    "@next/next/no-img-element": "warn", // Avertit lors de l'utilisation de <img> au lieu de <Image />
+    "react/jsx-key": "error", // Signale les éléments JSX sans clé
+    "no-console": "warn" // Avertit lors de l'utilisation de console.log
+  }
 }
