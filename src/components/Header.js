@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
 import Image from 'next/image';
 
 const navigationItems = [
@@ -42,8 +42,15 @@ export default function Header() {
               width={40}
               height={40}
             />
-            <div className={`absolute right-0 mt-2 w-48 bg-white shadow-lg rounded-md z-10 border border-gray-300 opacity-0 group-hover:opacity-100 transition-opacity duration-200`}>
-              <ul className="py-2">
+            <AnimatePresence>
+              <motion.div
+                className="absolute right-0 mt-2 w-48 bg-white shadow-lg rounded-md z-10 border border-gray-300 opacity-0 group-hover:opacity-100 transition-opacity"
+                transition={{ duration: 0.2 }}
+                initial={{ opacity: 0, y: -10 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -10 }} 
+                >
+                  <ul className="py-2">
                 <li>
                   <a
                     href="/public/docs/CV_Joro Sullivan_RAKOTONIAINA.pdf" // Replace with the actual path to your CV
@@ -70,8 +77,9 @@ export default function Header() {
                   </a>
                 </li>
               </ul>
+                </motion.div>
+            </AnimatePresence>   
             </div>
-          </div>
         </nav>
       </div>
     </header>
