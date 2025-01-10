@@ -2,6 +2,7 @@
 
 import { AnimatePresence, motion } from 'framer-motion';
 import Image from 'next/image';
+import { FaDownload, FaLinkedinIn, FaWhatsapp } from 'react-icons/fa';
 
 const navigationItems = [
   { name: 'About Me', href: '#about' },
@@ -15,6 +16,7 @@ const navigationItems = [
 ];
 
 export default function Header() {
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   return (
     <header className="fixed top-0 left-0 right-0 bg-white shadow-lg z-50">
       <div className="max-w-6xl mx-auto px-4 py-4">
@@ -43,6 +45,7 @@ export default function Header() {
               height={40}
             />
             <AnimatePresence>
+              {isDropdownOpen &&(
               <motion.div
                 className="absolute right-0 mt-2 w-48 bg-white shadow-lg rounded-md z-10 border border-gray-300 opacity-0 group-hover:opacity-100 transition-opacity"
                 transition={{ duration: 0.2 }}
@@ -57,6 +60,7 @@ export default function Header() {
                     download
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                   >
+                    <FaDownload className="mr-2" />
                     Download CV
                   </a>
                 </li>
@@ -65,6 +69,7 @@ export default function Header() {
                     href="https://wa.me/261341060802" // WhatsApp link
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                   >
+                    <FaWhatsapp className="mr-2" />
                     Contact on WhatsApp
                   </a>
                 </li>
@@ -73,11 +78,13 @@ export default function Header() {
                     href="https://www.linkedin.com/in/your-linkedin-profile" // Replace with your LinkedIn profile link
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                   >
+                    <FaLinkedinIn className="mr-2" />
                     LinkedIn Profile
                   </a>
                 </li>
               </ul>
                 </motion.div>
+              )}
             </AnimatePresence>   
             </div>
         </nav>
