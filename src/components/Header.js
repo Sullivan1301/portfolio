@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 const navigationItems = [
   { name: 'About Me', href: '#about' },
@@ -34,10 +35,12 @@ export default function Header() {
             ))}
           </ul>
           <div className="relative group">
-            <img
+            <Image
               src="/images/photo_cv.jpg"
               alt="Sullivan Icon"
               className="w-10 h-10 rounded-full mr-2 cursor-pointer"
+              width={40}
+              height={40}
             />
             <div className={`absolute right-0 mt-2 w-48 bg-white shadow-lg rounded-md z-10 border border-gray-300 opacity-0 group-hover:opacity-100 transition-opacity duration-200`}>
               <ul className="py-2">

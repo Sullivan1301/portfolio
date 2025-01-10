@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 export default function AboutSection() {
   return (
@@ -13,10 +14,12 @@ export default function AboutSection() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <img
-            src="/images/pull_rouge.jpg"
-            alt="Sullivan"
-            className="rounded-full shadow-lg max-w-96  h-85"
+          <Image
+          src="/images/pull_rouge.jpg"
+          alt="Sullivan"
+          className="rounded-full shadow-lg max-w-96  h-85"
+          width={384}
+          height={256}
           />
         </motion.div>
 
